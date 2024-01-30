@@ -22,5 +22,36 @@ document.createElement(tagName, [options]) - creates a new element of tag type t
     home.setAttribute('style', 'color: blue; background: red;');
     // adds several style rules
 
+<!-- Editing attributes -->
+    div.setAttribute('id', 'theDiv');                              
+    // if id exists, update it to 'theDiv', else create an id
+    // with value "theDiv"
+
+    div.getAttribute('id');                                        
+    // returns value of specified attribute, in this case
+    // "theDiv"
+
+    div.removeAttribute('id');                                     
+    // removes specified attribute
+
+<!-- Working with classes -->
+    div.classList.add('new');                                      
+    // adds class "new" to your new div
+
+    div.classList.remove('new');                                   
+    // removes "new" class from div
+
+    div.classList.toggle('active');                                
+    // if div doesn't have class "active" then add it, or if
+    // it does, then remove it
+
+<!-- Adding text content -->
+    div.textContent = 'Hello World!'                               
+    // creates a text node containing "Hello World!" and
+    // inserts it in div
+
+<!-- Adding HTML content -->
+    div.innerHTML = '<span>Hello World!</span>';                   
+    // renders the HTML inside div
 
 
